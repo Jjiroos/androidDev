@@ -4,14 +4,10 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 
 class HomeActivity : AppCompatActivity() {
-    companion object{
-        const val ORDER_KEY="order";
-    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,7 +48,13 @@ class HomeActivity : AppCompatActivity() {
 
     private fun displayOrder(message: CharSequence) {
         Toast.makeText(this, message, Toast.LENGTH_SHORT).show()
-        val intent = Intent(this, OrderActivity::class.java)
+        val intent = Intent(this, MenuActivity::class.java)
+        intent.putExtra(CATEGORY_KEY,message)
         startActivity(intent)
     }
+
+    companion object{
+        const val CATEGORY_KEY = "choixMenu"
+    }
+
 }

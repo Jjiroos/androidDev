@@ -24,7 +24,7 @@
 
     <Button
         android:id="@+id/choixEntree"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
         android:text="Entrées"
@@ -34,7 +34,7 @@
 
     <Button
         android:id="@+id/choixPlat"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Plats"
@@ -44,7 +44,7 @@
 
     <Button
         android:id="@+id/choixDessert"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="Desserts"
