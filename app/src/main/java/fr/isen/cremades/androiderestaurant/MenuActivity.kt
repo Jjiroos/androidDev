@@ -38,7 +38,7 @@ class MenuActivity : AppCompatActivity() {
     }
 
     fun requeteUrlItemList(categoryTitle: String) {
-        val volleyQueue = Volley.newRequestQueue(this)
+        val volleyQueue = Volley.newRequestQueue(this@MenuActivity)
         var reqParam = JSONObject("{\"id_shop\":1}")
         val urlMenuList = "http://test.api.catering.bluecodegames.com/menu"
 
@@ -53,8 +53,7 @@ class MenuActivity : AppCompatActivity() {
                     val items = menu.data.firstOrNull{it.name_fr==categoryTitle}?.items ?: arrayListOf()
 
                     val adapter = MenuAdapter(items) {
-                        val intent = Intent(this@MenuActivity, DetailActivity::class.java)
-
+                        val intent = Intent(this@MenuActivity, DetailsActivity::class.java)
                         intent.putExtra(DETAILS_KEY, it)
                         startActivity(intent)
                     }
@@ -71,21 +70,9 @@ class MenuActivity : AppCompatActivity() {
         volleyQueue.add(request)
     }
 
-   private fun parseRequete(response:JSONObject){
-
-   }
-
-    fun creerMesLigne() : ArrayList<DataMenu> {
-        val element = ArrayList<DataMenu>()
-        /*element.add(DataMenu(1, "Riz Dinde", "4 euros", "C'est un super plat pour prendre de la masse",0))
-        element.add(DataMenu(2, "Chips", "2 euros", "C'est un snack un peu nul",2))
-        */
-        return element
-    }
-
     companion object {
-        const val TITLE_KEY = "title"
         const val DETAILS_KEY = "details"
     }
 }
+
 

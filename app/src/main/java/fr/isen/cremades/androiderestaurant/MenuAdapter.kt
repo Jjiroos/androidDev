@@ -22,11 +22,12 @@ class MenuAdapter(val  items: List<Items>, val mListener: (Items) -> Unit)  : Re
         return ViewHolder(view)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: MenuAdapter.ViewHolder, position: Int) {
         val plat = items[position]
         holder.dishTile.text = plat.name_item_fr
         holder.dishPrice.text = plat.prices?.get(0)?.price.toString()+"€"
-        Picasso.get().load(plat.image?.get(0)?.ifEmpty { null }).error(R.drawable.logo).into(holder.imageDish)
+        Picasso.get().load(plat.image?.get(0)?.ifEmpty { null }).error(R.drawable.loading).into(holder.imageDish)
 
         holder.itemView.setOnClickListener {
             mListener(plat)

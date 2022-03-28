@@ -27,12 +27,8 @@ data class Items(
 
 data class Ingredients(
     @SerializedName("id") val id: Int? = null,
-    @SerializedName("id_shop") val id_category: Int? = null,
     @SerializedName("name_fr") val name_ingredient_fr: String? = null,
     @SerializedName("name_en") val name_ingredient_en: String? = null,
-    @SerializedName("create_date") val create_date: String? = null,
-    @SerializedName("update_date") val update_date: String? = null,
-    @SerializedName("id_pizza") val id_item: Int? = null
 ) : Serializable
 
 data class Prices(

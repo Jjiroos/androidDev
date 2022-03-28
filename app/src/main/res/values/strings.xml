@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">AndroidERestaurant</string>
     <string name="dessert">Dessert</string>
-    <string name="el_android_ristorante">El Android\'Ristorante</string>
+    <string name="el_android_ristorante">El RistorAndroid</string>
     <string name="choixEntree">Entrées</string>
     <string name="choixPlat">Plats</string>
     <string name="choixDessert">Desserts</string>
