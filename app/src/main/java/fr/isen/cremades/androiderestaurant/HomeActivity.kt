@@ -7,7 +7,7 @@ import android.util.Log
 import android.widget.TextView
 import android.widget.Toast
 
-class HomeActivity : AppCompatActivity() {
+class HomeActivity : CartCompactActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

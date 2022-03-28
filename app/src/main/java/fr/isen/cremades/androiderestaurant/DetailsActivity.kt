@@ -3,11 +3,11 @@ package fr.isen.cremades.androiderestaurant
 import android.annotation.SuppressLint
 import android.os.Bundle
 import android.util.Log
-import androidx.appcompat.app.AppCompatActivity
 import androidx.viewpager2.widget.ViewPager2
+import com.google.android.material.snackbar.Snackbar
 import fr.isen.cremades.androiderestaurant.databinding.ActivityDetailsBinding
 
-class DetailsActivity : AppCompatActivity() {
+class DetailsActivity : CartCompactActivity() {
     private lateinit var binding: ActivityDetailsBinding
 
     @SuppressLint("SetTextI18n", "CommitPrefEdits")
@@ -39,10 +39,11 @@ class DetailsActivity : AppCompatActivity() {
 
         binding.buttonPrice.setOnClickListener{
 
-            /*ShoppingCart.updateCart(ItemCart(item.images[0],item.name_fr,quantity,item.prices[0].price.toFloat()),this)
+            Panier.updateCart(ItemPanier(item.image!![0], item.name_item_fr!!,quantity,
+                item.prices[0].price!!.toFloat()),this)
             setupBadge()
-            Snackbar.make(binding.root,"$quantity ${item.name_fr} bien ajouté au panier", Snackbar.LENGTH_SHORT ).show()
-             */
+            Snackbar.make(binding.root,"$quantity ${item.name_item_fr} bien ajouté au panier", Snackbar.LENGTH_SHORT ).show()
+
         }
 
         binding.viewSilder.orientation = ViewPager2.ORIENTATION_HORIZONTAL

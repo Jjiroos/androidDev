@@ -23,7 +23,7 @@ class MenuFragment(private val image: String?) : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        Picasso.get().load(image).placeholder(R.drawable.logo).into(binding.imageSlider)
+        Picasso.get().load(image).placeholder(R.drawable.loading).into(binding.imageSlider)
 
     }
 

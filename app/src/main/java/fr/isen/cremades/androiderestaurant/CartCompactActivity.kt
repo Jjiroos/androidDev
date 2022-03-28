@@ -8,12 +8,12 @@ import android.view.View
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
-/*
+
 open class CartCompactActivity : AppCompatActivity() {
     private var textCartItemCount: TextView? = null
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_main,menu)
+        menuInflater.inflate(R.menu.menu_principal,menu)
         val menuItem = menu!!.findItem(R.id.cart_action)
         val actionView = menuItem.actionView
         textCartItemCount = actionView.findViewById<View>(R.id.cart_badge) as TextView
@@ -57,4 +57,3 @@ open class CartCompactActivity : AppCompatActivity() {
     }
 
 }
-*/

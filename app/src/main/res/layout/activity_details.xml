@@ -15,7 +15,7 @@
         android:fontFamily="serif"
         android:text="@string/textview"
         android:textAlignment="center"
-        android:textSize="30sp"
+        android:textSize="25sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -53,7 +53,7 @@
         android:layout_height="60dp"
         android:layout_marginEnd="76dp"
 
-        android:backgroundTint="@color/purple_200"
+        android:backgroundTint="@color/red"
         android:fontFamily="@font/"
         android:text="+"
         android:textSize="20sp"
@@ -70,28 +70,29 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="84dp"
-        android:backgroundTint="@color/purple_200"
+        android:backgroundTint="@color/red"
         android:text="@string/textview"
         android:textSize="14sp"
         app:cornerRadius="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonDown" />
+        app:layout_constraintTop_toBottomOf="@+id/buttonDown"
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/buttonDown"
         android:layout_width="61dp"
         android:layout_height="60dp"
         android:layout_marginStart="76dp"
-        android:backgroundTint="@color/purple_200"
+        android:backgroundTint="@color/red"
         android:fontFamily="@font/"
         android:text="-"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:cornerRadius="32dp"
         app:circularflow_defaultRadius="20dp"
+        app:cornerRadius="32dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailsFood"
@@ -109,6 +110,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/detailsFood"
-        app:layout_constraintVertical_bias="0.69" />
+        app:layout_constraintVertical_bias="0.808" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

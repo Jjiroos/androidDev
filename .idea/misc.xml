@@ -12,12 +12,14 @@
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/activity_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/activity_order.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/activity_panier.xml" value="0.1671875" />
+        <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/custom_panier_item_action.xml" value="0.264" />
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/fragment_image.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/fragment_menu.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/ma_ligne.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/menu_cell.xml" value="0.4" />
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/menu_fragment.xml" value="0.25052083333333336" />
-        <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/panier_cell.xml" value="0.25052083333333336" />
+        <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/layout/panier_cell.xml" value="0.4" />
+        <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/menu/menu_principal.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/clocl/Desktop/ISEN/DevAndroid/app/src/main/res/xml/network_security_config.xml" value="0.11302083333333333" />
       </map>
     </option>
